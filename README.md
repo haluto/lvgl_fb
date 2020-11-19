@@ -14,6 +14,19 @@ Just `make` the project in your environment: Linux PC, raspberrypi, or something
 
 `https://github.com/lvgl/lvgl`
 
+#### Modfiy lvgl/src/lv_font/lv_font_loader.c:
+
+error: ‘for’ loop initial declarations are only allowed in C99 mode
+
+```
+for(int i = 0;...)
+=>
+int i;
+for(i=0;...)
+```
+
+
+
 ### Download lvgl_drivers
 
 `https://github.com/lvgl/lv_drivers`
@@ -32,3 +45,4 @@ Just `make` the project in your environment: Linux PC, raspberrypi, or something
 - Remove lv_ex_conf.h
 - Remove lv_example related code in main.c
 - Remove lv_example related code in Makefile
+
